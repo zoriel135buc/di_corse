@@ -1,0 +1,31 @@
+*{
+    padding: o;
+    margin: 0;
+}
+header{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+
+
+}
+#header{
+    background-image: url(./images/bass\ guitar2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+#imagw2{
+   margin-top: 10px;
+ 
+}
+#card1{
+    margin-top: 40px;
+    height: 2px;
+    
+}
+#card2{
+    margin-top: 20px;
+
+}

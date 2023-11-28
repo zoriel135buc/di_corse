@@ -1,0 +1,31 @@
+#container{
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    border: 5px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+    
+
+
+}
+#div1{
+    background-color: #582A72;
+    width: 20%;
+    height: 150px;
+}
+
+#div2{
+    background-color: #246C60;
+    width: 50%;
+    height: 150px;
+
+}
+
+#div3{
+    background-color: red;
+    width: 30%;
+    height: 150px;
+}

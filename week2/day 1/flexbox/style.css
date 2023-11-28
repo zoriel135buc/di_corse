@@ -1,0 +1,31 @@
+#container{
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+#div1{
+    width: 100%;
+    height: 280px;
+    background-color: blue;
+   
+}
+#div2{
+    width: 30%;
+    height: 200px;
+    background-color: blue;
+    align-self: self-end;
+
+}
+#div3{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+
+}

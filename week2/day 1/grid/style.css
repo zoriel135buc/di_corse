@@ -1,0 +1,49 @@
+#container {
+    display: grid;
+    border: 1px solid;
+    height: 700px;
+    grid-template-areas:
+    'a a a a a'
+    'b b c c c' 
+    'b b c c c'
+    'd d c c c'
+    'd d e e e'
+    'f f f f g'
+    'h h h h h';
+    gap: 20px;
+}
+#header{
+    background-color: aqua;
+    grid-area: a;
+}
+#hero{
+    background-color: pink;
+    grid-area: b;
+
+}
+#main{
+    background-color: yellow;
+    grid-area: c;
+}
+#sidebar{
+    background-color: green;
+   grid-area: d;
+}
+#extra{
+    background-color: grey;
+    grid-area: e;
+}
+#releated{
+    background-color: greenyellow;
+    grid-area: f;
+
+}
+#realeted{
+    background-color: palevioletred;
+   grid-area: g;
+}
+#footer{
+    background-color: orange;
+    grid-area:h;
+
+}
