@@ -1,5 +1,0 @@
-let person={
-    username=""
-    password=""
-
-}
