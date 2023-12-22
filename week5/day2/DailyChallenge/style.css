@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .mercury {
   background-color: aqua;
 }
@@ -22,3 +23,29 @@
 .neptune {
   background-color: crimson;
 }
+=======
+.mercury {
+  background-color: aqua;
+}
+.venus {
+  background-color: aquamarine;
+}
+.earth {
+  background-color: azure;
+}
+.mars {
+  background-color: beige;
+}
+.jupiter {
+  background-color: bisque;
+}
+.saturn {
+  background-color: brown;
+}
+.uranus {
+  background-color: cadetblue;
+}
+.neptune {
+  background-color: crimson;
+}
+>>>>>>> 379a1cdbe8378079caf73d6115b436c9795c6cc3
