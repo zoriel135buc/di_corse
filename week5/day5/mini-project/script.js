@@ -36,8 +36,10 @@ function handleClick() {
 function handleMove(e) {
   if (!ismousePressed) return;
   console.log("coordinates:", e.x, e.y);
-  const hoverDiv = document.elementsFromPoint(e.x, e.y);
-  hoverDiv.style.backgroundColor = currenColor;
+  const hoverDivs = document.elementsFromPoint(e.x, e.y);
+  for (const hoverDiv of hoverDivs) {
+    hoverDiv.style.backgroundColor = currenColor;
+  }
 }
 
 function generateColor() {

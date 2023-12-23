@@ -1,35 +1,41 @@
+const form = document.getElementById("form");
+const ul = document.getElementById("list-tasks");
+
+form.addEventListener("submit", handleSubmit);
 const tasks = [];
 
-const myForm = document.forms.addTasksForm;
-const input = myForm.myInput;
-const listTasks = document.getElementById("listTasks");
-
-myForm.addEventListener(`submit`, addTasks);
-
-function addTasks(e) {
+function handleSubmit(e) {
   e.preventDefault();
-  if (input.value === "" || input.value === "") {
-    alert("please add proper todo");
-    return;
-  }
-  listTasks.innerHTML = "";
-  const ul = document.createElement("ul");
+  const formData = new FormData(form);
+  const task = ("formData:", formData.get("task"));
+  if (task === "") return;
+  tasks.push(task);
+  renderTasks(tasks);
+  form.reset();
+}
 
-  tasks.push(input.value);
-  for (let todo in tasks) {
-    const newTodo = document.createElement("li");
-    const button = document.createElement("button");
-    button.textContent = "x";
-    button.addEventListener("click", function () {
-      let position = tasks.indexOf(todo);
-      tasks.splice(position, 1);
-      newTodo.remove();
-      addTasks(e);
-    });
+function renderTasks() {
+  console.log("tasks:", tasks);
+  ul.innerHTML = "";
 
-    newTodo.textContent = todo;
-    newTodo.append(button);
-    ul.append(newTodo);
+  for (const task of tasks) {
+    console.log("the current task is", task);
+    const li = generateLi(task);
+    ul.append(li);
   }
-  input.value = "";
+}
+
+function generateLi(task) {
+  const li = document.createElement("li");
+
+  const xMark = document.createElement("i");
+  xMark.classList.add("fa-solid", "fa-xmark");
+  const checkbox = document.createElement("input");
+  checkbox.setAttribute("type", "checkbox");
+  const span = document.createElement("span");
+  span.innerText = task;
+
+  li.append(xMark, checkbox, span);
+
+  return li;
 }

@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fb00f227a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>DailyChallenge</title>
   </head>
   <body>
-    <form name="addTasksForm">
-      <input id="myInput" />
-      <button>add</button>
+    <form id="form">
+      <input type="text" name="task" />
+      <input type="submit" value="add" />
     </form>
-    <div id="listTasks"></div>
+    <ul id="list-tasks"></ul>
 
     <script src="script.js"></script>
   </body>
