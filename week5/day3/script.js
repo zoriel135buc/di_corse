@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // // event handelers
 // function clicked() {
 //   alert("i was clicked");

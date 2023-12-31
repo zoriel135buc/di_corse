@@ -4,11 +4,11 @@
 //   alert(`Hello! ${username}`);
 // }
 
-// let timoutId = setTimeout(sayHi, 3000, "dani123");
+let timoutId = setTimeout(sayHi, 3000, "dani123");
 
-// button.addEventListener("click", function () {
-//   clearTimeout(timoutId);
-// });
+button.addEventListener("click", function () {
+  clearTimeout(timoutId);
+});
 
 //SetInterval
 // const myP = document.querySelector("#myP");
@@ -26,15 +26,15 @@
 
 //Animations-> Moving box
 
-const child = document.getElementById("child");
+// const child = document.getElementById("child");
 
-let pos = 0;
-let intervalId = setInterval(function () {
-  if (pos == 300) {
-    clearInterval(intervalId);
-    // pos = 0;
-  }
-  pos++;
-  child.style.left = `${pos}px`;
-  child.style.top = `${pos}px`;
-}, 10);
+// let pos = 0;
+// let intervalId = setInterval(function () {
+//   if (pos == 300) {
+//     clearInterval(intervalId);
+//     // pos = 0;
+//   }
+//   pos++;
+//   child.style.left = `${pos}px`;
+//   child.style.top = `${pos}px`;
+// }, 10);

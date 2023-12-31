@@ -1,0 +1,25 @@
+-- CREATE TABLE items(
+--  items_id SERIAL PRIMARY KEY,
+--  name VARCHAR (50) NOT NULL,
+--  price numeric DATE NOT NULL,
+-- )
+-- INSERT INTO items(name,price)
+-- VALUES('small desk',100),('large desk',300),
+--       ('fan',80);
+-- CREATE TABLE customers(
+--  items_id SERIAL PRIMARY KEY,
+--  first_name VARCHAR (50) NOT NULL,
+--  last_name VARCHAR (50) NOT NULL,
+-- )
+-- INSERT INTO customers(first_name,last_name)
+--             VALUES('GREG','JONES'),('SANDRA','JONES'),
+-- 			('SCOTT','SCOTT'),('TREVOR','GREEN'),
+-- 			('MELANIE','JONSON');
+
+-- SELECT*FROM items
+-- SELECT*FROM customers
+-- SELECT * FROM items WHERE (price > 80) 
+-- SELECT * FROM items WHERE (price <300) 
+-- SELECT * FROM customers WHERE last_name = 'Smith'; 
+-- SELECT * FROM customers WHERE last_name = 'JONES'; 
+-- SELECT * FROM customers WHERE NOT first_name =  'SCOTT'; 

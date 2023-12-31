@@ -1,0 +1,51 @@
+What is SQL?
+Its a query language. It is used in databases
+
+What is postgresql?
+RDMS
+Relational Database structure
+
+Another example of Relational Database = MySQL
+
+give me an example of No-Relational Database = MongoDB
+
+What is pgadmin?
+management application
+
+
+Data Types:
+
+VARCHAR
+INTEGER
+DECIMAL
+DATE
+TEXT
+
+And more...
+
+What is Constraint: Constraints are used to limit the type of data that can go into a table.
+EXAMPLES OF CONSTRAINTS:
+UNIQUE
+NOT NULL
+UNIQUE+ NOT NULL = PRIMARY KEY
+DEFAULT
+FOREIGN KEY
+
+TYPES OF JOIN:
+inner join
+left join
+right join
+full outer join
+
+*****************************QUESTIONS FOR YOU**********************
+
+FOR YOU TO ANSWER ABOUT TODAY`S LESSON:
+
+what is an aggregate function?
+
+how you can connect tables in postgresql?
+
+What is the difference between:
+a) full and inner join
+b) left and right join
+ 
