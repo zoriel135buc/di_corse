@@ -1,0 +1,45 @@
+-- SELECT *
+-- FROM language;
+-- SELECT film.title, film.description, language.language_id
+-- FROM film
+-- JOIN language ON film.language_id = language.language_id;
+-- SELECT film.title, film.description, language.language_id
+-- FROM language
+-- LEFT JOIN film ON language.language_id = film.language_id;
+-- CREATE TABLE new_film (
+--     id INT PRIMARY KEY,
+--     name VARCHAR(255) NOT NULL
+-- );
+
+-- -- Insert some new films into the new_film table
+-- INSERT INTO new_film (id, name) VALUES
+-- (1, 'Film 1'),
+-- (2, 'Film 2'),
+-- (3, 'Film 3');
+-- Create the customer_review table
+-- CREATE TABLE customer_review (
+--     review_id INT PRIMARY KEY AUTO_INCREMENT,
+--     film_id INT,
+--     language_id INT,
+--     title VARCHAR(255) NOT NULL,
+--     score INT CHECK (score >= 1 AND score <= 10),
+--     review_text TEXT,
+--     last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+--     FOREIGN KEY (film_id) REFERENCES new_film(id) ON DELETE CASCADE,
+--     FOREIGN KEY (language_id) REFERENCES language(language_id)
+-- );
+-- Insert two movie reviews
+-- INSERT INTO customer_review (film_id, language_id, title, score, review_text)
+-- VALUES
+--     (1, 1, 'Great Movie!', 9, 'I really enjoyed this movie. It had a great storyline and excellent performances.'),
+--     (2, 2, 'Disappointing', 5, 'I was expecting more from this movie. The plot was weak and the acting did not impress me.');
+-- Assuming you are creating the customer_review table with a foreign key constraint
+-- CREATE TABLE customer_review (
+--     review_id INT PRIMARY KEY AUTO_INCREMENT,
+--     film_id INT,
+--     -- other columns...
+--     FOREIGN KEY (film_id) REFERENCES new_film(id) ON DELETE CASCADE
+-- );
+
+
+
