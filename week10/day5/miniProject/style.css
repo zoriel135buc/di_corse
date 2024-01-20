@@ -1,0 +1,44 @@
+.topnav {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6-yY1VN0ZIK2G9me0IQDCYVcNnTb8SVYxvg&usqp=CAU);
+  background-color: greenyellow;
+  height: 60px;
+}
+#navword {
+  position: relative;
+  left: 80px;
+  top: 20px;
+
+  font-family: "SEGA LOGO FONT", sans-serif;
+}
+input {
+  position: relative;
+  font-style: italic;
+  left: 50vh;
+  width: 1000px;
+  height: 30px;
+  font-size: 15px;
+}
+.div {
+  background-color: blueviolet;
+  background-image: url(circuit-pattern.png);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+.red {
+  color: red;
+  text-align: center;
+}
+.card {
+  display: flexbox;
+  margin: 10px;
+  border-style: solid;
+  width: 50vh;
+  background-color: aqua;
+  background-image: url(card-pattern.png);
+  overflow: hidden;
+}
+.email {
+  text-align: center;
+}
