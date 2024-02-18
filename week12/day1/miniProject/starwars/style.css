@@ -1,0 +1,41 @@
+body {
+  background-image: url(https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  width: 400px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#loader {
+  border: 8px solid #3498db;
+  border-top: 8px solid #f1c40f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+h2 {
+  color: yellow;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

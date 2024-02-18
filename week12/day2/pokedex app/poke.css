@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+}
+
+.pokemon-info {
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin: 0 10px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>pokeapp</title>
+  </head>
+  <body>
+    <div id="logo-container">
+      <img
+        id="pokemon_logo"
+        src="https://di-pokedex.surge.sh/logo.png"
+        alt=""
+      />
+      <div id="container">
+      <div id="instructions">
+        <h2>how to use:</h2>
+        <p>
+          <b>1</b>
+          "press the"
+          <b>green</b>
+          "button to get a random Pokémon"
+        </p>
+        <p>
+          <b>2</b>"press the" <b>left</b> "and" <b>right</b> "buttons to see
+          previous and next Pokémon."
+        </p>
+      </div>
+      <div id="pokedex-img">
+        <img src="https://di-pokedex.surge.sh/pokedex.png" />
+      </div>
+      <button id="findButton" onclick="getData()"></button>
+      <div id="button-lefr-right">
+        <button id="previous" onclick="previousdata()"></button>
+        <button id="next" onclick="nextdata()"></button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
