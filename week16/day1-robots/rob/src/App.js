@@ -1,5 +1,5 @@
 import "./App.css";
-import User from "./componeds/User";
+import User from "./componeds/User.js";
 import robots from "./users.json";
 
 function App() {
