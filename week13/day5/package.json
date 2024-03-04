@@ -1,0 +1,21 @@
+{
+  "name": "day5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "knex": "^3.1.0",
+    "pg": "^8.11.3",
+    "router": "^1.3.8",
+    "sqlite3": "^5.1.7"
+  }
+}
