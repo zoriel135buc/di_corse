@@ -1,5 +1,5 @@
 import "./App.css";
-import Emoji from "./assets/Components/Emoji";
+import Emoji from "./Components/Emoji";
 
 function App() {
   return (

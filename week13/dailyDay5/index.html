@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel Request</title>
+  </head>
+  <body>
+    <h2>Admin Panel Request</h2>
+    <form id="adminPanelForm" action="/admin-panel" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <button type="submit">Access Admin Panel</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("adminPanelForm")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault(); // Prevent default form submission
+          const username = document.getElementById("username").value;
+          const password = document.getElementById("password").value;
+
+          // Construct Basic Authentication header
+          const authHeader = "Basic " + btoa(username + ":" + password);
+
+          try {
+            // Make POST request to admin panel route
+            const response = await fetch("/admin-panel", {
+              method: "POST",
+              headers: {
+                Authorization: authHeader,
+                "Content-Type": "application/json",
+              },
+            });
+
+            if (response.ok) {
+              window.location.href = "http://localhost:3000/admin-panel"; // Redirect to admin panel upon success
+            } else {
+              throw new Error("Failed to access admin panel");
+            }
+          } catch (error) {
+            console.error(error); // Handle error
+          }
+        });
+    </script>
+  </body>
+</html>
